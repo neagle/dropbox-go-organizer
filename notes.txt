@@ -1,0 +1,10 @@
+* create a new API Gateway on AWS
+* create an app via the Dropbox console
+* create GET method in API Gateway for verification
+* add headers - note kinda funny way they are in JSON?
+* aws lambda create-function --function-name go-organizer --zip-file fileb://function.zip --handler index.handler --runtime nodejs10.x --role arn:aws:iam::480057545878:role/lambda-cli-role --profile gokibitz
+* got 502 error
+* enable cloudwatch logging for api gateway
+* had to create arn role: https://serverless-stack.com/chapters/api-gateway-and-lambda-logs.html
+* how do I verify my webhook is doing anything? need a service, man!
+* made a model for the incoming webhook for the api gateway request - pretty fun
